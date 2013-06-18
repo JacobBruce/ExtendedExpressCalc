@@ -1,0 +1,12 @@
+Introduction
+============
+
+The Extended Express Calculator is a Windows 7 desktop gadget powered by Javascript. It supports a range of different free-form mathematical expressions and also supports many common mathematical and scientific constants which can be referenced several ways including the use of unicode characters.
+
+This gadget is based off of the simpler Express Calculator created by Swanson Technologies (link: http://www.swansontec.com/pcalc.html). More information and details for using the Extended Express calculator can be found at j-d-b.net (link: http://www.j-d-b.net/?page=projects&pid=EXEC).
+
+How to Build Gadget
+=====================
+
+To compile the files into a Windows .gadget file simply compress all the files within the src folder into a single .zip archive file and then change the file extension from .zip to .gadget. Make sure you compress the files inside the src folder and not the folder its self (you don't need to include this README file obviously).
+
