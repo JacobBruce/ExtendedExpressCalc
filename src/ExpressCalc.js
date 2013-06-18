@@ -175,6 +175,7 @@ function getAnswer(question) {
 	question = question.
 	replace(/[\xB7\xD7\u2022\u22C5]/g, '*').
 	replace(/[\xF7\u2215\u2044]/g, '/').
+	replace(/\u221A\(/g, 'sqrt(').
 	replace(/\u2212/g, '-').
 	replace(/\u2260/g, '!=').
 	replace(/\u2264/g, '<=').
