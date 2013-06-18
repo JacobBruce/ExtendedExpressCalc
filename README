@@ -6,6 +6,104 @@ The Extended Express Calculator is a Windows 7 desktop gadget powered by Javascr
 This gadget is based off of the simpler Express Calculator created by Swanson Technologies (link: http://www.swansontec.com/pcalc.html). More information and details for using the Extended Express calculator can be found at j-d-b.net (link: http://www.j-d-b.net/?page=projects&pid=EXEC).
 
 How to Build Gadget
-=====================
+===================
 
 To compile the files into a Windows .gadget file simply compress all the files within the src folder into a single .zip archive file and then change the file extension from .zip to .gadget. Make sure you compress the files inside the src folder and not the folder its self (you don't need to include this README file obviously).
+
+Usage Examples
+==============
+
+Input: (2 + 3) / (tau * pi - phi)
+Output: 0.27592030050362
+
+Input: (two plus three) div (tau times pi minus phi)
+Output: 0.27592030050362
+
+Input: (2 + 3) ÷ (tau × pi - phi)
+Output: 0.27592030050362
+
+Input: 5 / (τ⋅π - φ)
+Output: 0.27592030050362
+
+Note that the × operator is not the lowercase x character, it is a special unicode character. Since the calculator is based off Javascript you can use Javascript functions and even create your own variables or functions as shown in the following examples:
+
+Input: sqrt(pi * phi)
+Output: 2.25459612620869
+
+Input: √(π⋅φ)
+Output: 2.25459612620869
+
+Input: var x = π⋅φ; √(x)
+Output: 2.25459612620869
+
+Input:  function pi_x_phi() { return π⋅φ; } sqrt(pi_x_phi())
+Ouput: 2.25459612620869
+
+Note that when using the √ operator you must put braces around the argument to be placed under the radical ('√' is simply replaced with 'sqrt'). You can mix and match any of the above mathods for writing mathematical expressions, which makes it very easy to copy and paste text from the internet straight into the calculator.
+
+All the functions and constants from the Javascript Math object have been made global so that you can do sqrt() instead of Math.sqrt() but all the other functions are the same. The full list of supported operators and unipre constants are listed below.
+
+Constants
+=========
+
+sqrt2 : square root of 2
+sqrt1_2 : square root of 0.5
+ln2 : natural logarithm of 2
+ln10 : natural logarithm of 10
+log2e : base-2 logarithm of e
+log10e : base-10 logarithm of e
+e : Euler's number, base of natural logarithm
+pi : ratio of circle's circumference to diameter
+phi : the golden ratio
+psi : reciprocal Fibonacci constant
+c : the speed of light
+g : Earth's gravitational acceleration
+G : universal gravitational constant
+h : Planck's constant
+hb : h-bar, the reduced Planck constant
+ec : the elementary charge constant
+me : mass of electron SI units
+mn : mass of neutron SI units
+mp : mass of proton SI units
+u : the unified atomic mass unit
+ub : the Bohr magneton constant
+Y : the Euler–Mascheroni constant
+p : the plastic number constant
+q : the first Feigenbaum constant
+a : the second Feigenbaum constant
+zf3 : Apéry's constant, aka ζ(3)
+zf4 : like zf3, result of ζ(4)
+tau : two pi, aka 2π
+cubit : length of royal cubit in meters
+
+Word Operators
+==============
+
+* : times
+/ : div
+- : minus
++ : plus
+% : mod
+
+Unicode Characters
+==================
+
+* : times, ×, ·, ⋅, •;
+/ : div, ÷, ∕, ⁄
+- : minus, −
+!= : ≠
+<= : ≤
+>= : ≥
+pi : π, Π
+phi : φ, Φ, ϕ
+psi : Ψ, ψ
+tau : τ
+p : ρ
+a : α
+q : δ
+Y : γ
+hb : ħ
+ub : μ
+sqrt() : √
+zeta() : ζ
+Infinity : ∞
