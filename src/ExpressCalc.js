@@ -25,7 +25,7 @@ var mn = 1.67492735e-27;
 var mp = 1.672621777e-27;
 var u = 1.660538921e-27;
 var ub = 9.27400968e-24;
-var y = 0.5772156649015328606065120900824;
+var Y = 0.5772156649015328606065120900824;
 var p = 1.324717957244746025960908854;
 var a = 2.502907875095892822283902873218;
 var q = 4.669201609102990671853203821578;
@@ -190,7 +190,7 @@ function getAnswer(question) {
 	replace(/\u03c1/g, 'p').
 	replace(/\u03b1/g, 'a').
 	replace(/\u03b4/g, 'q').
-	replace(/\u03b3/g, 'y').
+	replace(/\u03b3/g, 'Y').
 	replace(/\u0127/g, 'hb').
 	replace(/\u03bc/g, 'ub').
 	replace(/\u03b6/g, 'zeta');
