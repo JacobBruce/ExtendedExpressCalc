@@ -186,7 +186,7 @@ function getAnswer(question) {
 	replace(/[\u03c0\u03a0]/g, 'pi').
 	replace(/[\u03c6\u03a6\u03d5]/g, 'phi').
 	replace(/[\u03a8\u03c8]/g, 'psi').
-	replace(/[\u03a8\u03c4]/g, 'tau').
+	replace(/\u03c4/g, 'tau').
 	replace(/\u03c1/g, 'p').
 	replace(/\u03b1/g, 'a').
 	replace(/\u03b4/g, 'q').
