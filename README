@@ -88,9 +88,9 @@ Word Operators
 Unicode Characters
 ==================
 
-* : times, ×, ·, ⋅, •;
-/ : div, ÷, ∕, ⁄
-- : minus, −
+* : ×, ·, ⋅, •;
+/ : ÷, ∕, ⁄
+- : −
 != : ≠
 <= : ≤
 >= : ≥
